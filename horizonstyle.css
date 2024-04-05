@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+    flex-grow: 0;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px ;
+}
+
+nav {
+    padding: 10px 10px;
+    flex-grow: 1;  /* Make navbar fill remaining space */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;  /* Align nav items to the right */
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;  /* Adjust margins for spacing */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    background-color: #f1f1f1;
+    /* Added styles for vertical dropdown */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 1px;
+}
+
+.dropdown li {
+    padding: 5px ;
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+.contact-info {
+    flex-grow: 0;
+}
+
+.contact-info span a {
+    color: #333;
+}
+
+main {
+    padding: 40
+}
+.hero {
+    background-image: url('c:\Users\user\Downloads\house3.jpg'); /* Update path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%; /* Make the background image cover the entire width */
+}
